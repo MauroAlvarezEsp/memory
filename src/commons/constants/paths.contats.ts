@@ -1,0 +1,1 @@
+export const imagesPath = "/api/content/spaces/animals/types/game/entries?"
