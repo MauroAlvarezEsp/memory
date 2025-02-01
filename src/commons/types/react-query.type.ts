@@ -1,5 +1,6 @@
 export type ReactQueryType = {
     data: any,
     isPending: boolean,
-    error: any
+    error: any,
+    refetch: Function
 }
