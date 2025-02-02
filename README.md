@@ -1,6 +1,6 @@
 ## Deployed project
 
-Open [[http://localhost:3000](https://tourmaline-belekoy-21ded9.netlify.app/)]([http://localhost:3000](https://tourmaline-belekoy-21ded9.netlify.app/)) to view it in the browser.
+Open [https://tourmaline-belekoy-21ded9.netlify.app/](https://tourmaline-belekoy-21ded9.netlify.app/) to view it in the browser.
 
 The project is integrated abd hosted with netlify for fast automatic deployments on every change
 
