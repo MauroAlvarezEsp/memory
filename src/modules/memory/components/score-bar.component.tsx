@@ -5,7 +5,7 @@ export const ScoreBar = (props: {score: ScoreType}) => {
     const { t } = useTranslation();
 
     return (
-        <div className="flex w-[45%] lg:w-[30%] m-auto justify-around pt-5 pb-1 text-blue-950">
+        <div className="flex w-[45%] lg:w-[30%] m-auto justify-around pt-5 pb-1">
             <h1 className="text-xl font-semibold">{t('label.hits')} {props.score.hits}</h1>
             <h1 className="text-xl font-semibold">{t('label.errors')} {props.score.errors}</h1>
         </div>

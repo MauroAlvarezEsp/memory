@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f9f9f9;
   padding: 20px;
 }
 
@@ -20,4 +19,8 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gradient-theme{
+  background-image: linear-gradient(to right top, #7100bd, #5f1dbb, #4e29b7, #3c31b3, #2836ad, #3334a7, #3b33a2, #41319c, #562995, #67208d, #741484, #7f007b);
 }

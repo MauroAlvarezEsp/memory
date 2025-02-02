@@ -29,7 +29,7 @@ export const MemoryComponent = () => {
 
     const flip = (index: number) => setCards(prev =>
         prev.map(item => item.index === index ? { ...item, status: flippedStatus } : item)
-    );
+    );  
     
     const handleHit = (flippedCards: Array<string>) => {
         setCards(prev =>
@@ -74,7 +74,7 @@ export const MemoryComponent = () => {
         imagesQuery.isPending 
         ? <Loader />
         : (
-            <section className="w-[100%] md:w-[90%] lg:w-[90%] max-w-5xl border-2 border-slate-200 shadow-lg rounded-md bg-white m-auto">
+            <section className="w-[100%] md:w-[90%] lg:w-[90%] text-white max-w-5xl border-2 border-slate-200 shadow-lg rounded-md m-auto gradient-theme">
                 <CardsContext.Provider value={cards}>
                     {(score.hits == cards?.length / 2)
                     ? <Congrats restart={restart} />
