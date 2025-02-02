@@ -6,7 +6,7 @@ const Congrats = (props: {restart: Function}) => {
     const { t } =  useTranslation();
 
     return(
-        <div className="text-center p-32 bg-blue-950 text-white shine">
+        <div className="text-center py-40 md:p-32 bg-blue-950 text-white shine">
             <h1 className="text-lg">{userName}</h1>
             <h1 className="text-4xl mt-5 font-bold">{t('label.congratulations')}</h1>
             <h1 className="text-md text-gray-300 mb-5">{t('label.finished')}</h1>
