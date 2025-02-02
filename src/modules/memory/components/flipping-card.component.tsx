@@ -13,7 +13,7 @@ const FlippingCard = (props: {image: ImageResponseMapped, flip: Function}) => {
             <div 
                 role="card-flipped"
                 style={{background: `url(${props.image.url}) no-repeat center`, backgroundSize:"cover"}}
-                className="animate-[flip_0.2s_forwards] w-full h-36 border-2 border-slate-100 rounded-md"
+                className="animate-[flip_0.2s_forwards] w-full h-32 sm:h-36 border-2 border-slate-100 rounded-md"
             />
         )
     }
@@ -24,7 +24,7 @@ const FlippingCard = (props: {image: ImageResponseMapped, flip: Function}) => {
                 role="card-not-flipped"
                 onClick={flippedCards !== 2 ? () => props.flip(props.image.index) : ()=>{}}
                 key={props.image.uuid}
-                className="animate-[flip_0.2s_forwards] w-full h-36 text-gray-500 bg-gray-100 border-2 border-slate-100 flex justify-center hover:cursor-pointer hover:shadow-lg rounded-md"
+                className="animate-[flip_0.2s_forwards] w-full h-32 sm:h-36 text-gray-500 bg-gray-100 border-2 border-slate-100 flex justify-center hover:cursor-pointer hover:shadow-lg rounded-md"
             >
                 <QuestionOutlined className="text-5xl text-blue-950" style={{transform: "rotateY(180deg)"}} />
             </div>

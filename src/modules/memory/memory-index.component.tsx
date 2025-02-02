@@ -82,7 +82,7 @@ export const MemoryComponent = () => {
                         <>
                             <ScoreBar score={score}/>
 
-                            <div className="grid gap-4 p-6 grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+                            <div className="grid gap-2 sm:gap-4 p-6 grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
                                 { cardsComponent }
                             </div>
                         </>
