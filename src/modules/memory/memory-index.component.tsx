@@ -74,7 +74,7 @@ export const MemoryComponent = () => {
         imagesQuery.isPending 
         ? <Loader />
         : (
-            <section className="w-5/6 max-w-5xl border-2 border-slate-200 shadow-lg rounded-md bg-white m-auto">
+            <section className="w-[100%] md:w-[90%] lg:w-[90%] max-w-5xl border-2 border-slate-200 shadow-lg rounded-md bg-white m-auto">
                 <CardsContext.Provider value={cards}>
                     {(score.hits == cards?.length / 2)
                     ? <Congrats restart={restart} />
@@ -82,7 +82,7 @@ export const MemoryComponent = () => {
                         <>
                             <ScoreBar score={score}/>
 
-                            <div className="grid gap-4 p-6 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
+                            <div className="grid gap-4 p-6 grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
                                 { cardsComponent }
                             </div>
                         </>
