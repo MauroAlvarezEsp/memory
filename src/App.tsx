@@ -1,15 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { MemoryComponent } from './modules/memory/memory.component';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { MainRouter } from './commons/routes/MainRoutes.component';
+import './i18n';
 
 function App() {
   const queryClient = new QueryClient()
 
   return (
     <QueryClientProvider client={queryClient}>
-          <MemoryComponent /> 
+        <MainRouter /> 
     </QueryClientProvider>
   );
 }
